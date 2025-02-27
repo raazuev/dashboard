@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../shared/ui/button/Button";
-import { useFetchTests } from "../../shared/hooks/useFetchTests";
+import { useFetchTests } from "../../entities/model/useFetchTests";
 import { cleanUrl } from "../../shared/utils/formatUrl";
 import { SearchTest } from "../../widgets/searchTest/SearchTest";
-import { Status, Type } from "../../app/types/testTypes";
+import { Status, Type } from "../../entities/model/testTypes";
 import { Spinner } from "../../shared/ui/spinner/Spinner";
 import styles from "./DashboardTest.module.scss";
 
@@ -137,7 +137,12 @@ export const DashboardTest = ({
                   {cleanUrl(test.url)}
                 </a>
               </span>
-              <Button onClick={() => handleButtonClick(test.id, test.status)}>
+              <Button
+                className={
+                  test.status === "DRAFT" ? styles.draftBtn : styles.resultsBtn
+                }
+                onClick={() => handleButtonClick(test.id, test.status)}
+              >
                 {test.status === "DRAFT" ? "Finalize" : "Results"}
               </Button>
             </div>

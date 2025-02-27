@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useFetchTests } from "../../shared/hooks/useFetchTests";
+import { useFetchTests } from "../../entities/model/useFetchTests";
 import { Spinner } from "../../shared/ui/spinner/Spinner";
 import { Button } from "../../shared/ui/button/Button";
 import styles from "./ResultsTest.module.scss";

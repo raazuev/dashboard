@@ -46,7 +46,7 @@
       align-items: center;
       padding: 30px 16px;
       text-align: center;
-      background-color: #fff;
+      background-color: var(--background-color);
       border-radius: 10px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -61,6 +61,11 @@
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.3rem;
+        color: var(--text-color);
+      }
+
+      .draftBtn {
+        background-color: #7d7d7d;
       }
 
       .text {
@@ -68,7 +73,7 @@
         font-weight: 400;
         font-size: 0.8rem;
         line-height: 1.1rem;
-        color: #5c5c5c;
+        color: var(--text-color);
         text-transform: lowercase;
       }
 

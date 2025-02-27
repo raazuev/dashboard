@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchSites, fetchTests } from "../../app/api/api";
-import { Test } from "../../app/types/testTypes";
+import { Test } from "./testTypes";
 
 type TestWithUrl = Test & { url: string };
 
