@@ -1,0 +1,27 @@
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 500px;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      font-family: "Montserrat-Bold";
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.5rem;
+    }
+
+    p {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+    }
+  }
+}

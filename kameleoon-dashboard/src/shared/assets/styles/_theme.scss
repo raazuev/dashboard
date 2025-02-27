@@ -1,0 +1,17 @@
+@use "./variables" as vars;
+
+:root {
+  --background-color: #{vars.$Background};
+  --text-color: #{vars.$Main_Dark};
+}
+
+.dark-theme {
+  --background-color: #{vars.$Dark_Primary};
+  --text-color: #{vars.$Light_Grey};
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

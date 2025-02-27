@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node.js
+node_modules
+dist
+dist-ssr
+.output
+/public/build
+coverage/
+.nyc_output
+.parcel-cache
+.turbo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.history
+.DS_Store
+.suo
+.sw?
+.sass-cache/
+
+# Environment variables
+.env
+*.env.*
+
+# System files
+Thumbs.db
+*.tmp
+desktop.ini
+.Trashes
+
+# Tests
+*.test.*
+coverage/
+
+# CI/CD
+.github/workflows/*

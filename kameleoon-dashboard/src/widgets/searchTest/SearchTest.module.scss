@@ -1,0 +1,25 @@
+@use "../../shared/assets/styles/mixin" as mix;
+
+.search {
+  position: relative;
+  display: flex;
+
+  &__img {
+    position: absolute;
+    top: 22px;
+    left: 13px;
+  }
+
+  &__input {
+    @include mix.Input;
+    opacity: 40%;
+  }
+
+  &__total {
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    color: var(--text-color);
+    opacity: 40%;
+  }
+}
